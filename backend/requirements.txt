@@ -1,0 +1,5 @@
+biopython==1.81
+Flask==2.2.2
+numpy==1.24.4
+Requests==2.31.0
+Werkzeug==2.2.2
