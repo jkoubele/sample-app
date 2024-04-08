@@ -3,8 +3,10 @@ from pathlib import Path
 import numpy as np
 from Bio import SeqIO, SeqUtils
 from flask import Flask, request, make_response, jsonify
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 tmp_folder = Path(__file__).parent / 'tmp'
 tmp_folder.mkdir(parents=True, exist_ok=True)
