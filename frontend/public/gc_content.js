@@ -13,7 +13,7 @@ function uploadFile() {
 
       var hostIPAddress = window.location.hostname
       console.log(hostIPAddress)
-      xhr.open('POST', 'http://127.0.0.1:5000/compute_gc_content', true);
+      xhr.open('POST', 'http://'+hostIPAddress+':5000/compute_gc_content', true);
       xhr.onreadystatechange = function() {
         if (xhr.readyState === XMLHttpRequest.DONE) {
           if (xhr.status >= 200 && xhr.status < 300) {
